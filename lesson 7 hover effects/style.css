@@ -62,9 +62,31 @@ main-header .container {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-hover {
+    transform:translateY(-2px);
+    opacity: 0.9;
 }
 
 .btn-primary {
     background-color: #e74e3c;
     color: #ffffff;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #3498db;
+}
+
+.main-nav a:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 4px;
 }
